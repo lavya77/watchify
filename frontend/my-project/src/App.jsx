@@ -1,11 +1,13 @@
 import React from "react";
 import Dashboard from "./pages/Dashboard";
-import Navbar from "./components/Navbar";
+
+import Navbartwo from "./components/Navbartwo";
 
 export default function App() {
   return (
     <>
-      <Navbar />
+     
+      <Navbartwo />
      <Dashboard />
   
  
