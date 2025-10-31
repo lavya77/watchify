@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+
 function Dashboard() {
   return (
     <>
@@ -62,9 +65,9 @@ function Dashboard() {
 <section class="bg-gradient-to-b from-indigo-800 via-indigo-850 to-black text-white text-center py-20">
 
   <h2 class="text-3xl font-semibold mb-6">Want to explore more?</h2>
-  <button class="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-indigo-400/50 transition">
+  <Link to ="/products" class="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-indigo-400/50 transition">
     See More Products
-  </button>
+  </Link>
 
   <div class="mt-20">
     <h3 class="text-2xl font-semibold mb-4">Contact Us</h3>

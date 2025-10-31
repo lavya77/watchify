@@ -1,12 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbartwo() {
   return (
 <nav class="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-lg text-white px-10 py-4 flex justify-between items-center border-b border-indigo-500/20">
-  
-  <div class="text-2xl font-extrabold tracking-wider text-indigo-300">
-    Electrify
-  </div>
+ <Link
+  to="/"
+  className="text-2xl font-extrabold tracking-wider text-indigo-300 hover:text-indigo-400 transition duration-300"
+>
+  Electrify
+</Link>
 
  
   <div class="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-4 py-2 w-80 shadow-inner shadow-indigo-500/20 focus-within:ring-2 focus-within:ring-indigo-400 transition">
@@ -24,8 +27,12 @@ function Navbartwo() {
 
 
   <ul class="hidden md:flex space-x-10 text-sm font-medium">
-    <li><a href="#" class="hover:text-indigo-300 transition">Home</a></li>
-    <li><a href="#" class="hover:text-indigo-300 transition">Products</a></li>
+    <Link to="/" className="hover:text-purple-400 transition">
+          Home
+        </Link>
+        <Link to="/products" className="hover:text-purple-400 transition">
+          Products
+        </Link>
     <li><a href="#" class="hover:text-indigo-300 transition">About</a></li>
     <li><a href="#" class="hover:text-indigo-300 transition">Contact</a></li>
   </ul>
